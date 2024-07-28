@@ -41,9 +41,9 @@ func Hit( nuke NukeStruct, i int,  mobile_number string){
     if err != nil {
         fmt.Println(err)
     }else{
-	    defer resp.Body.Close()
-	    fmt.Println(i,"]",mobile_number,"]",nuke.Name,"]",resp.StatusCode)
-    }
+		defer resp.Body.Close()
+		fmt.Println(i,"]",mobile_number,"]",nuke.Name,"]",resp.StatusCode)
+	}
 }
 
 func Attack(mobile_number string){ 
